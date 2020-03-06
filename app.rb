@@ -29,8 +29,8 @@ corona.instances.each do |key, value|
   if MySQL.entry_exists?('corona_instances', url)
     # Tweet.send_negative_tweet
   else
-    MySQL.add_entry 'corona_instances', url, text
-    Tweet.send_positive_tweet(url)
+    # MySQL.add_entry 'corona_instances', url, text
+    # Tweet.send_positive_tweet(url)
   end
 end
 
